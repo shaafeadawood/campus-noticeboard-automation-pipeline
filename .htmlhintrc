@@ -1,0 +1,13 @@
+{
+  "tagname-lowercase": true,
+  "attr-lowercase": true,
+  "doctype-first": true,
+  "title-require": true,
+  "tag-pair": true,
+  "attr-value-double-quotes": true,
+  "inline-style-disabled": true,
+  "id-unique": true,
+  "alt-require": true,
+  "space-tab-mixed-disabled": "space",
+  "attr-no-duplication": true
+}

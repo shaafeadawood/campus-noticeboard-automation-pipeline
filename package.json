@@ -4,6 +4,16 @@
   "private": true,
   "description": "Static website foundation for campus noticeboard automation pipeline.",
   "scripts": {
-    "start": "npx serve src"
+    "dev": "parcel src/index.html src/notices.html src/exams.html src/admissions.html src/contact.html --open",
+    "build": "parcel build src/index.html src/notices.html src/exams.html src/admissions.html src/contact.html --dist-dir dist",
+    "lint:html": "htmlhint \"src/**/*.html\"",
+    "lint:css": "stylelint \"styles/**/*.css\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.8.0",
+    "parcel": "^2.15.4",
+    "stylelint": "^16.22.0",
+    "stylelint-config-standard": "^38.0.0"
   }
 }
