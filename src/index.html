@@ -3,32 +3,378 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Noticeboard | Home</title>
+    <title>University Academic Portal | Home</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Campus Noticeboard</h1>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="notices.html">Notices</a></li>
-          <li><a href="exams.html">Exams</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Modern Header with Navbar -->
+    <header class="site-header-modern">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </a>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar-menu" aria-label="Primary">
+          <ul class="nav-list-modern">
+            <li><a href="index.html" aria-current="page" class="nav-link-active">Home</a></li>
+            <li><a href="notices.html" class="nav-link">Notices</a></li>
+            <li><a href="exams.html" class="nav-link">Exams</a></li>
+            <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Side Panel -->
+      <div class="side-panel" id="sidePanel">
+        <button class="side-panel-close" id="closePanelBtn" aria-label="Close navigation">×</button>
+        <nav class="side-panel-nav">
+          <ul class="side-panel-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notices.html">Notices Board</a></li>
+            <li><a href="exams.html">Exam Portal</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="side-panel-info">
+          <h4>Quick Info</h4>
+          <p class="info-item"><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p class="info-item"><strong>Email:</strong> info@university.edu</p>
+          <p class="info-item"><strong>Hours:</strong> Mon-Fri 9AM-5PM</p>
+        </div>
+      </div>
+
+      <!-- Backdrop for Side Panel -->
+      <div class="side-panel-backdrop" id="panelBackdrop"></div>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>Welcome</h2>
-        <p>Official campus announcements and student updates in one place.</p>
+    <main>
+      <!-- Hero Section with Background Image -->
+      <section class="hero-modern">
+        <div class="hero-background-image" style="background-image: url('https://images.unsplash.com/photo-1427504494785-cdde7dcbab0b?w=1200&h=600&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content-modern">
+          <div class="hero-text">
+            <h1 class="hero-title">Your Academic Journey</h1>
+            <h2 class="hero-subtitle">Excellence in Education Awaits</h2>
+            <p class="hero-description">Join thousands of students pursuing their dreams at our world-class institution. Access everything you need in one centralized portal.</p>
+            
+            <div class="hero-cta-group">
+              <a href="admissions.html" class="cta-btn cta-primary">Apply Now</a>
+              <a href="notices.html" class="cta-btn cta-secondary">Latest Updates</a>
+            </div>
+          </div>
+
+          <!-- Hero Stats -->
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">10,000+</div>
+              <div class="stat-label">Active Students</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Courses</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Faculty Members</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="scroll-icon">↓</div>
+        </div>
       </section>
+
+      <!-- Quick Access Cards - Enhanced Design -->
+      <div class="content">
+        <section class="quick-access-modern">
+          <div class="section-header">
+            <h2>Explore Our Services</h2>
+            <p class="section-subtitle">Everything you need for academic success</p>
+          </div>
+
+          <div class="cards-grid-modern">
+            <!-- Notices Card -->
+            <article class="card-modern card-gradient-1">
+              <div class="card-bg-pattern"></div>
+              <div class="card-content">
+                <div class="card-icon-modern">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="M3 7h18M8 11h8"/>
+                  </svg>
+                </div>
+                <h3>Notices</h3>
+                <p>Stay updated with the latest campus announcements and important notices.</p>
+                <a href="notices.html" class="card-link">View All <span>→</span></a>
+              </div>
+            </article>
+
+            <!-- Exams Card -->
+            <article class="card-modern card-gradient-2">
+              <div class="card-bg-pattern"></div>
+              <div class="card-content">
+                <div class="card-icon-modern">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4"/>
+                    <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3>Exams</h3>
+                <p>Access exam schedules, results, and all examination-related information.</p>
+                <a href="exams.html" class="card-link">View Exams <span>→</span></a>
+              </div>
+            </article>
+
+            <!-- Admissions Card -->
+            <article class="card-modern card-gradient-3">
+              <div class="card-bg-pattern"></div>
+              <div class="card-content">
+                <div class="card-icon-modern">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </div>
+                <h3>Admissions</h3>
+                <p>Learn about our admission process and application requirements.</p>
+                <a href="admissions.html" class="card-link">Apply Now <span>→</span></a>
+              </div>
+            </article>
+
+            <!-- Contact Card -->
+            <article class="card-modern card-gradient-4">
+              <div class="card-bg-pattern"></div>
+              <div class="card-content">
+                <div class="card-icon-modern">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                  </svg>
+                </div>
+                <h3>Contact</h3>
+                <p>Get in touch with our advisors and administrative staff.</p>
+                <a href="contact.html" class="card-link">Contact Us <span>→</span></a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+          <div class="section-header">
+            <h2>Why Choose Us</h2>
+            <p class="section-subtitle">Leading institution for academic excellence</p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">🎯</div>
+              <h3>Mission-Driven</h3>
+              <p>Committed to developing well-rounded graduates who make a positive impact on society.</p>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">🏆</div>
+              <h3>World-Class Faculty</h3>
+              <p>Experienced professors with research credentials and industry expertise.</p>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">💡</div>
+              <h3>Innovation Hub</h3>
+              <p>State-of-the-art facilities and cutting-edge research laboratories.</p>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">🌍</div>
+              <h3>Global Network</h3>
+              <p>International partnerships and exchange programs worldwide.</p>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">📚</div>
+              <h3>Rich Resources</h3>
+              <p>Comprehensive library with digital and physical collections.</p>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <h3>Student Support</h3>
+              <p>24/7 counseling, mentoring, and career development services.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Updates Section -->
+        <section class="featured-modern">
+          <div class="section-header">
+            <h2>Latest Updates</h2>
+            <p class="section-subtitle">Stay informed with our announcements</p>
+          </div>
+
+          <div class="updates-grid-modern">
+            <article class="update-card">
+              <div class="update-badge">Today</div>
+              <div class="update-icon">📝</div>
+              <h3>Spring Semester Registration Open</h3>
+              <p>Students can now register for Spring semester courses. Registration closes on December 20th.</p>
+              <a href="notices.html" class="read-more">Read More →</a>
+            </article>
+
+            <article class="update-card">
+              <div class="update-badge">Yesterday</div>
+              <div class="update-icon">📋</div>
+              <h3>Final Exam Schedule Released</h3>
+              <p>The final examination schedule for all programs has been released. Check Exams section for details.</p>
+              <a href="exams.html" class="read-more">Read More →</a>
+            </article>
+
+            <article class="update-card">
+              <div class="update-badge">Dec 18</div>
+              <div class="update-icon">📚</div>
+              <h3>Library Extended Hours</h3>
+              <p>The central library will have extended hours during the examination period from Dec 25 onwards.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- CTA Section - Enhanced -->
+        <section class="cta-section-modern">
+          <div class="cta-content">
+            <h2>Begin Your Journey Today</h2>
+            <p>Join our community of excellence and transform your academic future</p>
+            <a href="admissions.html" class="cta-btn-large">Start Your Application</a>
+          </div>
+          <div class="cta-background"></div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Campus Noticeboard</p>
+    <!-- Modern Footer -->
+    <footer class="site-footer-modern">
+      <div class="footer-main">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </div>
+          <p class="brand-tagline">Excellence in Education</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <!-- Footer Links Sections -->
+        <div class="footer-links">
+          <!-- Section 1 -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="notices.html">Notices</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="footer-section">
+            <h4>Academic</h4>
+            <ul>
+              <li><a href="#">Course Catalog</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+              <li><a href="#">Degree Programs</a></li>
+              <li><a href="#">Faculty Directory</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Student Services</a></li>
+              <li><a href="#">Campus Map</a></li>
+              <li><a href="#">Library Portal</a></li>
+              <li><a href="#">IT Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 4 - Contact -->
+          <div class="footer-section footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">info@university.edu</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">University Campus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-modern">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 University Academic Portal. All rights reserved.</p>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Navigation Script -->
+    <script>
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const sidePanel = document.getElementById('sidePanel');
+      const panelBackdrop = document.getElementById('panelBackdrop');
+      const closePanelBtn = document.getElementById('closePanelBtn');
+
+      function toggleSidePanel() {
+        sidePanel.classList.toggle('active');
+        panelBackdrop.classList.toggle('active');
+        document.body.style.overflow = sidePanel.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburgerBtn.addEventListener('click', toggleSidePanel);
+      closePanelBtn.addEventListener('click', toggleSidePanel);
+      panelBackdrop.addEventListener('click', toggleSidePanel);
+
+      // Close side panel when a link is clicked
+      document.querySelectorAll('.side-panel-nav a').forEach(link => {
+        link.addEventListener('click', toggleSidePanel);
+      });
+    </script>
   </body>
 </html>
