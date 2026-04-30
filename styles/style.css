@@ -1620,6 +1620,763 @@ main > section:first-child p {
 }
 
 /* ============================================
+   ADMISSIONS PAGE STYLES
+   ============================================ */
+
+/* Admissions Hero */
+.admissions-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: var(--gap-xl) var(--gap-lg);
+  text-align: center;
+  color: white;
+  margin-bottom: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  animation: slide-in-down 0.6s ease-out;
+}
+
+.admissions-hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.admissions-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: var(--gap-md);
+  letter-spacing: 0.5px;
+}
+
+.admissions-hero .subtitle {
+  font-size: 1.3rem;
+  margin-bottom: var(--gap-lg);
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+.hero-cta-btn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background-color: white;
+  color: var(--primary);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: 2px solid white;
+}
+
+.hero-cta-btn:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Programs Section */
+.programs-section {
+  background: white;
+  padding: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--gap-xl);
+  box-shadow: var(--shadow-md);
+  animation: fade-in 0.6s ease-out 0.1s both;
+}
+
+.programs-section h2 {
+  color: var(--primary);
+  margin-bottom: var(--gap-sm);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: var(--gap-sm);
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: var(--gap-lg);
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-lg);
+}
+
+.program-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  border: 2px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary);
+}
+
+.program-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.engineering-icon::before {
+  content: "⚙";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+}
+
+.science-icon::before {
+  content: "🧪";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+}
+
+.business-icon::before {
+  content: "📊";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+}
+
+.arts-icon::before {
+  content: "📚";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+}
+
+.program-content {
+  padding: var(--gap-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-content h3 {
+  color: var(--primary);
+  margin-bottom: var(--gap-sm);
+  font-size: 1.4rem;
+}
+
+.program-content .degree {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: var(--gap-md);
+}
+
+.specializations {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--gap-md);
+  flex: 1;
+}
+
+.specializations li {
+  color: var(--text-secondary);
+  padding: 0.35rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.specializations li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.program-meta {
+  display: flex;
+  gap: var(--gap-md);
+  padding-top: var(--gap-md);
+  border-top: 1px solid #f0f0f0;
+}
+
+.program-meta span {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  background: #f9fafb;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Application Process */
+.application-process {
+  background: white;
+  padding: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--gap-xl);
+  box-shadow: var(--shadow-md);
+  animation: fade-in 0.6s ease-out 0.2s both;
+}
+
+.application-process h2 {
+  color: var(--primary);
+  margin-bottom: var(--gap-lg);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: var(--gap-sm);
+}
+
+.process-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: var(--gap-lg);
+  flex-wrap: wrap;
+}
+
+.process-step {
+  flex: 1;
+  min-width: 200px;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: var(--gap-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 2px solid var(--primary);
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.process-step:hover {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.process-step:hover .step-number {
+  background: white;
+  color: var(--primary);
+}
+
+.process-step:hover h3,
+.process-step:hover p {
+  color: white;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: var(--gap-md);
+  transition: all var(--transition-fast);
+}
+
+.process-step h3 {
+  color: var(--primary);
+  margin-bottom: var(--gap-sm);
+  font-size: 1.15rem;
+  transition: color var(--transition-fast);
+}
+
+.process-step p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.95rem;
+  transition: color var(--transition-fast);
+}
+
+.process-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Eligibility Section */
+.eligibility-section {
+  background: white;
+  padding: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--gap-xl);
+  box-shadow: var(--shadow-md);
+  animation: fade-in 0.6s ease-out 0.3s both;
+}
+
+.eligibility-section h2 {
+  color: var(--primary);
+  margin-bottom: var(--gap-lg);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: var(--gap-sm);
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--gap-lg);
+}
+
+.requirement-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: var(--gap-lg);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--primary);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.requirement-card:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  color: white;
+  transform: translateX(8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.requirement-card:hover h3,
+.requirement-card:hover ul {
+  color: white;
+}
+
+.requirement-card:hover .req-icon {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.req-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(139, 0, 0, 0.1);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--gap-md);
+  transition: all var(--transition-fast);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.edu-icon::before {
+  content: "🎓";
+}
+
+.exam-icon::before {
+  content: "📝";
+}
+
+.doc-icon::before {
+  content: "📂";
+}
+
+.merit-icon::before {
+  content: "⭐";
+}
+
+.requirement-card h3 {
+  color: var(--primary);
+  margin-bottom: var(--gap-md);
+  font-size: 1.15rem;
+  transition: color var(--transition-fast);
+}
+
+.requirement-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: color var(--transition-fast);
+}
+
+.requirement-card li {
+  color: var(--text-secondary);
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.requirement-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Admission Dates */
+.admission-dates {
+  background: white;
+  padding: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--gap-xl);
+  box-shadow: var(--shadow-md);
+  animation: fade-in 0.6s ease-out 0.4s both;
+}
+
+.admission-dates h2 {
+  color: var(--primary);
+  margin-bottom: var(--gap-lg);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: var(--gap-sm);
+}
+
+.dates-timeline {
+  position: relative;
+  padding-left: var(--gap-xl);
+}
+
+.dates-timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-radius: 2px;
+}
+
+.date-item {
+  margin-bottom: var(--gap-lg);
+  position: relative;
+}
+
+.date-marker {
+  position: absolute;
+  left: -27px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  transition: all var(--transition-fast);
+}
+
+.date-item:hover .date-marker {
+  background: var(--primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.date-content {
+  background: #f9fafb;
+  padding: var(--gap-md) var(--gap-lg);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--primary);
+  transition: all var(--transition-base);
+}
+
+.date-item:hover .date-content {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.date-content h3 {
+  color: var(--primary);
+  margin: 0 0 var(--gap-xs) 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  transition: color var(--transition-fast);
+}
+
+.date-item:hover .date-content h3 {
+  color: white;
+}
+
+.date-content p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.date-item:hover .date-content p {
+  color: white;
+}
+
+/* Fee Section */
+.fee-section {
+  background: white;
+  padding: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--gap-xl);
+  box-shadow: var(--shadow-md);
+  animation: fade-in 0.6s ease-out 0.5s both;
+}
+
+.fee-section h2 {
+  color: var(--primary);
+  margin-bottom: var(--gap-lg);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: var(--gap-sm);
+}
+
+.fee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-lg);
+}
+
+.fee-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: var(--gap-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 2px solid var(--primary);
+  transition: all var(--transition-base);
+}
+
+.fee-card:hover {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.fee-program {
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--gap-md);
+  transition: color var(--transition-fast);
+}
+
+.fee-card:hover .fee-program {
+  color: white;
+}
+
+.fee-amount {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: var(--gap-xs);
+  transition: color var(--transition-fast);
+}
+
+.fee-card:hover .fee-amount {
+  color: white;
+}
+
+.fee-currency {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: var(--gap-md);
+  transition: color var(--transition-fast);
+}
+
+.fee-card:hover .fee-currency {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fee-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.fee-details li {
+  color: var(--text-secondary);
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.fee-card:hover .fee-details li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fee-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.fee-card:hover .fee-details li::before {
+  color: white;
+}
+
+.fee-note {
+  color: var(--text-secondary);
+  text-align: center;
+  font-style: italic;
+  padding: var(--gap-md);
+  background: #f9fafb;
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--primary);
+}
+
+/* FAQ Section */
+.faq-section {
+  background: white;
+  padding: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--gap-xl);
+  box-shadow: var(--shadow-md);
+  animation: fade-in 0.6s ease-out 0.6s both;
+}
+
+.faq-section h2 {
+  color: var(--primary);
+  margin-bottom: var(--gap-lg);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: var(--gap-sm);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap-lg);
+}
+
+.faq-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: var(--gap-lg);
+  border-radius: var(--radius-lg);
+  border: 2px solid transparent;
+  transition: all var(--transition-base);
+}
+
+.faq-card:hover {
+  background: white;
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.faq-card h3 {
+  color: var(--primary);
+  margin-bottom: var(--gap-md);
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.faq-card p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Admission CTA */
+.admission-cta {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: var(--gap-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  color: white;
+  margin-bottom: var(--gap-xl);
+  box-shadow: var(--shadow-lg);
+  animation: fade-in 0.6s ease-out 0.7s both;
+}
+
+.admission-cta h2 {
+  color: white;
+  border-bottom: none;
+  margin-bottom: var(--gap-md);
+  font-size: 2.25rem;
+}
+
+.admission-cta p {
+  font-size: 1.15rem;
+  margin-bottom: var(--gap-lg);
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--gap-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 0.875rem 2rem;
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: 2px solid white;
+  display: inline-block;
+}
+
+.cta-btn.primary {
+  background-color: white;
+  color: var(--primary);
+}
+
+.cta-btn.primary:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn.secondary {
+  background-color: transparent;
+  color: white;
+}
+
+.cta-btn.secondary:hover {
+  background-color: white;
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
    ANIMATIONS
    ============================================ */
 
@@ -1855,6 +2612,43 @@ main > section:first-child p {
   .resources-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Admissions Responsive */
+  .admissions-hero {
+    padding: var(--gap-lg);
+  }
+
+  .admissions-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .admissions-hero .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-timeline {
+    gap: var(--gap-md);
+  }
+
+  .process-step {
+    min-width: 150px;
+  }
+
+  .requirements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width <= 480px) {
@@ -2062,6 +2856,53 @@ main > section:first-child p {
     width: 40px;
     height: 40px;
     font-size: 0.7rem;
+  }
+
+  /* Admissions Responsive */
+  .admissions-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .admissions-hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-cta-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    flex-direction: column;
+  }
+
+  .process-arrow {
+    transform: rotate(90deg);
+    margin: var(--gap-md) 0;
+  }
+
+  .requirements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-btn {
+    width: 100%;
   }
 }
 

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Noticeboard | Admissions</title>
+    <title>University Academic Portal | Admissions</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <h1>Campus Noticeboard</h1>
+      <h1>University Portal</h1>
       <nav aria-label="Primary">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -20,15 +20,371 @@
       </nav>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>Admissions</h2>
-        <p>Admission announcements, deadlines, and requirements are posted here.</p>
+    <main>
+      <!-- Admissions Hero Section -->
+      <section class="admissions-hero">
+        <div class="admissions-hero-content">
+          <h1>Join Our Community</h1>
+          <p class="subtitle">Start Your Journey to Excellence - Apply Now for 2026 Intake</p>
+          <a href="#apply" class="hero-cta-btn">Begin Your Application</a>
+        </div>
       </section>
+
+      <div class="content">
+        <!-- Programs Offered -->
+        <section class="programs-section">
+          <h2>Our Programs</h2>
+          <p class="section-subtitle">Explore world-class educational programs tailored for your success</p>
+          <div class="programs-grid">
+            <!-- Engineering Program -->
+            <div class="program-card">
+              <div class="program-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="program-icon engineering-icon"></div>
+              </div>
+              <div class="program-content">
+                <h3>Engineering</h3>
+                <p class="degree">Bachelor of Technology (4 Years)</p>
+                <ul class="specializations">
+                  <li>Computer Science</li>
+                  <li>Mechanical Engineering</li>
+                  <li>Civil Engineering</li>
+                  <li>Electrical Engineering</li>
+                </ul>
+                <div class="program-meta">
+                  <span class="seats">120 Seats</span>
+                  <span class="cutoff">Merit Based</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Science Program -->
+            <div class="program-card">
+              <div class="program-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="program-icon science-icon"></div>
+              </div>
+              <div class="program-content">
+                <h3>Science</h3>
+                <p class="degree">Bachelor of Science (3 Years)</p>
+                <ul class="specializations">
+                  <li>Physics</li>
+                  <li>Chemistry</li>
+                  <li>Biology</li>
+                  <li>Mathematics</li>
+                </ul>
+                <div class="program-meta">
+                  <span class="seats">80 Seats</span>
+                  <span class="cutoff">Merit Based</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Program -->
+            <div class="program-card">
+              <div class="program-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="program-icon business-icon"></div>
+              </div>
+              <div class="program-content">
+                <h3>Business Administration</h3>
+                <p class="degree">Bachelor of Business Administration (3 Years)</p>
+                <ul class="specializations">
+                  <li>Finance</li>
+                  <li>Marketing</li>
+                  <li>Human Resources</li>
+                  <li>Entrepreneurship</li>
+                </ul>
+                <div class="program-meta">
+                  <span class="seats">100 Seats</span>
+                  <span class="cutoff">Merit Based</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arts Program -->
+            <div class="program-card">
+              <div class="program-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <div class="program-icon arts-icon"></div>
+              </div>
+              <div class="program-content">
+                <h3>Liberal Arts</h3>
+                <p class="degree">Bachelor of Arts (3 Years)</p>
+                <ul class="specializations">
+                  <li>English Literature</li>
+                  <li>History</li>
+                  <li>Philosophy</li>
+                  <li>Psychology</li>
+                </ul>
+                <div class="program-meta">
+                  <span class="seats">90 Seats</span>
+                  <span class="cutoff">Merit Based</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Application Process -->
+        <section class="application-process">
+          <h2>Application Process</h2>
+          <div class="process-timeline">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h3>Register</h3>
+              <p>Create your account on our admission portal</p>
+            </div>
+            <div class="process-arrow"></div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h3>Fill Form</h3>
+              <p>Complete your application form with all details</p>
+            </div>
+            <div class="process-arrow"></div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h3>Upload Documents</h3>
+              <p>Submit required documents and photographs</p>
+            </div>
+            <div class="process-arrow"></div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h3>Submit & Pay</h3>
+              <p>Pay application fee and submit your application</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Eligibility & Requirements -->
+        <section class="eligibility-section">
+          <h2>Eligibility & Requirements</h2>
+          <div class="requirements-grid">
+            <div class="requirement-card">
+              <div class="req-icon edu-icon"></div>
+              <h3>Educational Qualification</h3>
+              <ul>
+                <li>12th Pass or Higher</li>
+                <li>Recognized Board/University</li>
+                <li>Minimum 50% Marks</li>
+                <li>PCMB/PCM/PCB for Science</li>
+              </ul>
+            </div>
+
+            <div class="requirement-card">
+              <div class="req-icon exam-icon"></div>
+              <h3>Entrance Examination</h3>
+              <ul>
+                <li>National Level Entrance Test</li>
+                <li>Qualifying Score Required</li>
+                <li>Merit-based Ranking</li>
+                <li>Score Validity: 2 Years</li>
+              </ul>
+            </div>
+
+            <div class="requirement-card">
+              <div class="req-icon doc-icon"></div>
+              <h3>Required Documents</h3>
+              <ul>
+                <li>10th & 12th Certificates</li>
+                <li>Entrance Test Scorecard</li>
+                <li>Photo & Signature</li>
+                <li>ID Proof (Aadhar/Passport)</li>
+              </ul>
+            </div>
+
+            <div class="requirement-card">
+              <div class="req-icon merit-icon"></div>
+              <h3>Selection Criteria</h3>
+              <ul>
+                <li>Merit (80%)</li>
+                <li>Category Reservation (20%)</li>
+                <li>Sports/Cultural Quota</li>
+                <li>Management Quota</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Important Dates -->
+        <section class="admission-dates">
+          <h2>Important Dates</h2>
+          <div class="dates-timeline">
+            <div class="date-item">
+              <div class="date-marker"></div>
+              <div class="date-content">
+                <h3>June 1, 2026</h3>
+                <p>Application Portal Opens</p>
+              </div>
+            </div>
+
+            <div class="date-item">
+              <div class="date-marker"></div>
+              <div class="date-content">
+                <h3>July 31, 2026</h3>
+                <p>Last Date for Application Submission</p>
+              </div>
+            </div>
+
+            <div class="date-item">
+              <div class="date-marker"></div>
+              <div class="date-content">
+                <h3>August 15, 2026</h3>
+                <p>Merit List Announcement</p>
+              </div>
+            </div>
+
+            <div class="date-item">
+              <div class="date-marker"></div>
+              <div class="date-content">
+                <h3>August 20-25, 2026</h3>
+                <p>Counselling & Seat Allocation</p>
+              </div>
+            </div>
+
+            <div class="date-item">
+              <div class="date-marker"></div>
+              <div class="date-content">
+                <h3>September 1, 2026</h3>
+                <p>Academic Year Begins</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Fee Structure -->
+        <section class="fee-section">
+          <h2>Fee Structure</h2>
+          <div class="fee-grid">
+            <div class="fee-card">
+              <div class="fee-program">Engineering</div>
+              <div class="fee-amount">12,00,000</div>
+              <p class="fee-currency">Per Year</p>
+              <ul class="fee-details">
+                <li>Tuition Fee</li>
+                <li>Lab Charges</li>
+                <li>Library Access</li>
+                <li>Campus Amenities</li>
+              </ul>
+            </div>
+
+            <div class="fee-card">
+              <div class="fee-program">Science/Arts</div>
+              <div class="fee-amount">8,00,000</div>
+              <p class="fee-currency">Per Year</p>
+              <ul class="fee-details">
+                <li>Tuition Fee</li>
+                <li>Lab Charges</li>
+                <li>Library Access</li>
+                <li>Campus Amenities</li>
+              </ul>
+            </div>
+
+            <div class="fee-card">
+              <div class="fee-program">Business</div>
+              <div class="fee-amount">10,00,000</div>
+              <p class="fee-currency">Per Year</p>
+              <ul class="fee-details">
+                <li>Tuition Fee</li>
+                <li>Case Studies</li>
+                <li>Library Access</li>
+                <li>Campus Amenities</li>
+              </ul>
+            </div>
+          </div>
+          <p class="fee-note">Note: Scholarships available for merit and need-based students</p>
+        </section>
+
+        <!-- FAQs -->
+        <section class="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-grid">
+            <div class="faq-card">
+              <h3>What is the admission process?</h3>
+              <p>The admission is merit-based. You need to appear for the entrance examination, and based on your score and qualifications, you will be offered a seat through counselling.</p>
+            </div>
+
+            <div class="faq-card">
+              <h3>Are there any scholarships available?</h3>
+              <p>Yes! We offer merit-based scholarships covering up to 100% of tuition fees, need-based financial aid, and specific scholarships for sports and cultural talents.</p>
+            </div>
+
+            <div class="faq-card">
+              <h3>What is the cutoff score?</h3>
+              <p>The cutoff score varies each year based on the number of applicants and difficulty level of the entrance exam. Last year's cutoff was 680/700.</p>
+            </div>
+
+            <div class="faq-card">
+              <h3>Can I apply for multiple programs?</h3>
+              <p>Yes, you can apply for multiple programs during the application process. During counselling, you'll select your preferred program based on merit.</p>
+            </div>
+
+            <div class="faq-card">
+              <h3>What about hostel facilities?</h3>
+              <p>We provide excellent hostel facilities with all modern amenities. Students can apply during the admission process. Hostel fee is additional.</p>
+            </div>
+
+            <div class="faq-card">
+              <h3>Is there a management quota?</h3>
+              <p>Yes, 20% seats are reserved for management/minority quotas. The fee structure may differ, and merit requirements are relaxed.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="admission-cta" id="apply">
+          <h2>Ready to Apply?</h2>
+          <p>Join thousands of students pursuing their dreams at our university</p>
+          <div class="cta-buttons">
+            <a href="#" class="cta-btn primary">Apply Now</a>
+            <a href="#" class="cta-btn secondary">Download Prospectus</a>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Campus Noticeboard</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="exams.html">Exams</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Academic</h3>
+          <ul>
+            <li><a href="#">Course Catalog</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">Degree Programs</a></li>
+            <li><a href="#">Faculty Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Student Resources</h3>
+          <ul>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Career Services</a></li>
+            <li><a href="#">Student Support</a></li>
+            <li><a href="#">Campus Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Campus Address</li>
+            <li>+1 (555) 123-4567</li>
+            <li>admissions@university.edu</li>
+            <li>Mon-Fri: 9AM-5PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 University Academic Portal. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
     </footer>
   </body>
 </html>
