@@ -3,32 +3,435 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Noticeboard | Contact</title>
+    <title>University Academic Portal | Contact Us</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Campus Noticeboard</h1>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="notices.html">Notices</a></li>
-          <li><a href="exams.html">Exams</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="contact.html" aria-current="page">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Modern Header with Navbar -->
+    <header class="site-header-modern">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </a>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar-menu" aria-label="Primary">
+          <ul class="nav-list-modern">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="notices.html" class="nav-link">Notices</a></li>
+            <li><a href="exams.html" class="nav-link">Exams</a></li>
+            <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li><a href="contact.html" aria-current="page" class="nav-link-active">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Side Panel -->
+      <div class="side-panel" id="sidePanel">
+        <button class="side-panel-close" id="closePanelBtn" aria-label="Close navigation">×</button>
+        <nav class="side-panel-nav">
+          <ul class="side-panel-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notices.html">Notices Board</a></li>
+            <li><a href="exams.html">Exam Portal</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="side-panel-info">
+          <h4>Quick Info</h4>
+          <p class="info-item"><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p class="info-item"><strong>Email:</strong> info@university.edu</p>
+          <p class="info-item"><strong>Hours:</strong> Mon-Fri 9AM-5PM</p>
+        </div>
+      </div>
+
+      <!-- Backdrop for Side Panel -->
+      <div class="side-panel-backdrop" id="panelBackdrop"></div>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>Contact</h2>
-        <p>For administrative queries, contact the campus office via official channels.</p>
+    <main>
+      <!-- Page Hero Section -->
+      <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1>Contact Us</h1>
+          <p class="page-hero-subtitle">Get in touch with our team - We're here to help</p>
+        </div>
       </section>
+
+      <div class="content">
+        <!-- Contact Section Grid -->
+        <section class="contact-section">
+          <div class="section-header">
+            <h2>How to Reach Us</h2>
+            <p class="section-subtitle">Multiple ways to connect with our administration</p>
+          </div>
+
+          <div class="contact-cards-grid">
+            <!-- Admissions Contact -->
+            <div class="contact-card">
+              <div class="contact-icon">📋</div>
+              <h3>Admissions Office</h3>
+              <p class="contact-info">
+                <strong>Email:</strong><br>
+                admissions@university.edu
+              </p>
+              <p class="contact-info">
+                <strong>Phone:</strong><br>
+                +1 (555) 123-4456
+              </p>
+              <p class="contact-info">
+                <strong>Hours:</strong><br>
+                Mon-Fri: 9AM-5PM
+              </p>
+              <a href="admissions.html" class="contact-link">Learn More →</a>
+            </div>
+
+            <!-- Academic Affairs -->
+            <div class="contact-card">
+              <div class="contact-icon">🎓</div>
+              <h3>Academic Affairs</h3>
+              <p class="contact-info">
+                <strong>Email:</strong><br>
+                academic@university.edu
+              </p>
+              <p class="contact-info">
+                <strong>Phone:</strong><br>
+                +1 (555) 123-4567
+              </p>
+              <p class="contact-info">
+                <strong>Hours:</strong><br>
+                Mon-Fri: 9AM-5PM
+              </p>
+              <a href="#" class="contact-link">Exam Queries →</a>
+            </div>
+
+            <!-- Student Services -->
+            <div class="contact-card">
+              <div class="contact-icon">🤝</div>
+              <h3>Student Services</h3>
+              <p class="contact-info">
+                <strong>Email:</strong><br>
+                student.services@university.edu
+              </p>
+              <p class="contact-info">
+                <strong>Phone:</strong><br>
+                +1 (555) 123-4890
+              </p>
+              <p class="contact-info">
+                <strong>Available:</strong><br>
+                24/7 Support
+              </p>
+              <a href="#" class="contact-link">Get Support →</a>
+            </div>
+
+            <!-- Placement Cell -->
+            <div class="contact-card">
+              <div class="contact-icon">💼</div>
+              <h3>Placement Cell</h3>
+              <p class="contact-info">
+                <strong>Email:</strong><br>
+                placement@university.edu
+              </p>
+              <p class="contact-info">
+                <strong>Phone:</strong><br>
+                +1 (555) 123-4789
+              </p>
+              <p class="contact-info">
+                <strong>Hours:</strong><br>
+                Mon-Fri: 10AM-4PM
+              </p>
+              <a href="#" class="contact-link">Career Info →</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h2>Send us a Message</h2>
+              <p>We'll get back to you as soon as possible</p>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject *</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="admissions">Admissions</option>
+                    <option value="academics">Academics</option>
+                    <option value="exams">Exams</option>
+                    <option value="placement">Placement</option>
+                    <option value="facility">Facility</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Campus Map Info -->
+          <div class="campus-info">
+            <div class="campus-map">
+              <div class="map-placeholder">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 100%; height: 100%; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">
+                  University Campus Map
+                </div>
+              </div>
+            </div>
+
+            <div class="campus-address">
+              <h3>University Campus Location</h3>
+              <p class="address-detail">
+                <strong>Main Campus Address</strong><br>
+                123 Academic Avenue<br>
+                Education City, EC 12345<br>
+                Country
+              </p>
+
+              <p class="address-detail">
+                <strong>Visiting Hours</strong><br>
+                Monday - Friday: 7:00 AM - 6:00 PM<br>
+                Saturday: 9:00 AM - 2:00 PM<br>
+                Sunday: Closed
+              </p>
+
+              <p class="address-detail">
+                <strong>Parking Facilities</strong><br>
+                Free parking available for visitors<br>
+                3 parking lots across campus<br>
+                EV charging stations available
+              </p>
+
+              <a href="#" class="direction-btn">Get Directions →</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="contact-faq">
+          <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common queries</p>
+          </div>
+
+          <div class="faq-items">
+            <div class="faq-item">
+              <div class="faq-header">
+                <h3>What are the admission deadlines?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-body">
+                <p>Admission deadlines vary by program. Generally, applications are accepted from June to July for the fall semester. For specific dates, please contact our Admissions Office at admissions@university.edu.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <h3>How do I check my exam schedule?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-body">
+                <p>You can view your exam schedule in the Exams section of this portal. Log in with your student credentials and navigate to "My Exam Schedule" to see your courses and exam dates.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <h3>Is there a campus tour available?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-body">
+                <p>Yes! We offer guided campus tours on weekdays from 10 AM to 3 PM. To schedule a tour, please contact our Admissions Office at least 2 days in advance.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <h3>How can I apply for scholarships?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-body">
+                <p>Scholarship applications are typically open from May to June. Visit the Financial Aid section of our website or contact our office for application materials and eligibility criteria.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <h3>What facilities does the campus have?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-body">
+                <p>Our campus offers modern facilities including libraries, laboratories, sports complexes, student centers, cafeterias, and residential halls. For a complete list, please visit the Campus Facilities page.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <h3>How do I contact the Placement Cell?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-body">
+                <p>Our Placement Cell can be reached at placement@university.edu or by phone at +1 (555) 123-4789. Office hours are Monday to Friday, 10 AM to 4 PM.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Campus Noticeboard</p>
+    <!-- Modern Footer -->
+    <footer class="site-footer-modern">
+      <div class="footer-main">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </div>
+          <p class="brand-tagline">Excellence in Education</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <!-- Footer Links Sections -->
+        <div class="footer-links">
+          <!-- Section 1 -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="notices.html">Notices</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="footer-section">
+            <h4>Academic</h4>
+            <ul>
+              <li><a href="#">Course Catalog</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+              <li><a href="#">Degree Programs</a></li>
+              <li><a href="#">Faculty Directory</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Student Services</a></li>
+              <li><a href="#">Campus Map</a></li>
+              <li><a href="#">Library Portal</a></li>
+              <li><a href="#">IT Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 4 - Contact -->
+          <div class="footer-section footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">info@university.edu</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">University Campus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-modern">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 University Academic Portal. All rights reserved.</p>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Navigation Script -->
+    <script>
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const sidePanel = document.getElementById('sidePanel');
+      const panelBackdrop = document.getElementById('panelBackdrop');
+      const closePanelBtn = document.getElementById('closePanelBtn');
+
+      function toggleSidePanel() {
+        sidePanel.classList.toggle('active');
+        panelBackdrop.classList.toggle('active');
+        document.body.style.overflow = sidePanel.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburgerBtn.addEventListener('click', toggleSidePanel);
+      closePanelBtn.addEventListener('click', toggleSidePanel);
+      panelBackdrop.addEventListener('click', toggleSidePanel);
+
+      // Close side panel when a link is clicked
+      document.querySelectorAll('.side-panel-nav a').forEach(link => {
+        link.addEventListener('click', toggleSidePanel);
+      });
+
+      // FAQ Toggle Functionality
+      document.querySelectorAll('.faq-header').forEach(header => {
+        header.addEventListener('click', function() {
+          const item = this.parentElement;
+          item.classList.toggle('active');
+          const toggle = this.querySelector('.faq-toggle');
+          toggle.textContent = item.classList.contains('active') ? '−' : '+';
+        });
+      });
+    </script>
   </body>
 </html>

@@ -3,32 +3,303 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Noticeboard | Notices</title>
+    <title>University Academic Portal | Notices</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Campus Noticeboard</h1>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="notices.html" aria-current="page">Notices</a></li>
-          <li><a href="exams.html">Exams</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Modern Header with Navbar -->
+    <header class="site-header-modern">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </a>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar-menu" aria-label="Primary">
+          <ul class="nav-list-modern">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="notices.html" aria-current="page" class="nav-link-active">Notices</a></li>
+            <li><a href="exams.html" class="nav-link">Exams</a></li>
+            <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Side Panel -->
+      <div class="side-panel" id="sidePanel">
+        <button class="side-panel-close" id="closePanelBtn" aria-label="Close navigation">×</button>
+        <nav class="side-panel-nav">
+          <ul class="side-panel-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notices.html">Notices Board</a></li>
+            <li><a href="exams.html">Exam Portal</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="side-panel-info">
+          <h4>Quick Info</h4>
+          <p class="info-item"><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p class="info-item"><strong>Email:</strong> info@university.edu</p>
+          <p class="info-item"><strong>Hours:</strong> Mon-Fri 9AM-5PM</p>
+        </div>
+      </div>
+
+      <!-- Backdrop for Side Panel -->
+      <div class="side-panel-backdrop" id="panelBackdrop"></div>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>Latest Notices</h2>
-        <p>This page lists the latest campus notices and updates.</p>
+    <main>
+      <!-- Page Hero Section -->
+      <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1>Campus Notice Board</h1>
+          <p class="page-hero-subtitle">Important announcements, events, and academic updates</p>
+        </div>
       </section>
+
+      <!-- Cork Notice Board -->
+      <div class="notice-board-container">
+        <div class="notice-board">
+          <!-- Notice 1 -->
+          <article class="notice-card notice-urgent" style="--rotation: -2deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge urgent">URGENT</div>
+            <h3 class="notice-title">Semester Exams Rescheduled</h3>
+            <p class="notice-date"><strong>May 15, 2026</strong></p>
+            <div class="notice-body">
+              <p>The final semester examinations have been rescheduled due to the upcoming cultural festival. New dates have been announced:</p>
+              <ul>
+                <li><strong>Theory Papers:</strong> June 1-10</li>
+                <li><strong>Practical Exams:</strong> June 12-15</li>
+                <li><strong>Result Declaration:</strong> July 5</li>
+              </ul>
+              <p class="notice-footer">Updated by: Academic Affairs Office</p>
+            </div>
+          </article>
+
+          <!-- Notice 2 -->
+          <article class="notice-card notice-event" style="--rotation: 1.5deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge event">EVENT</div>
+            <h3 class="notice-title">Annual Tech Fest 2026</h3>
+            <p class="notice-date"><strong>May 20-22, 2026</strong></p>
+            <div class="notice-body">
+              <p>Join us for the biggest tech festival of the year!</p>
+              <p><strong>Highlights:</strong></p>
+              <ul>
+                <li>Coding competitions with exciting prizes</li>
+                <li>Guest lectures from industry experts</li>
+                <li>Startup pitch competition</li>
+                <li>Gaming tournament & tech exhibitions</li>
+              </ul>
+              <p><strong>Registration:</strong> Open until May 18</p>
+              <p class="notice-footer">Contact: student.events@university.edu</p>
+            </div>
+          </article>
+
+          <!-- Notice 3 -->
+          <article class="notice-card notice-deadline" style="--rotation: -1.8deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge deadline">DEADLINE</div>
+            <h3 class="notice-title">Scholarship Applications Closing</h3>
+            <p class="notice-date"><strong>May 31, 2026</strong></p>
+            <div class="notice-body">
+              <p>Deadline for submitting scholarship applications:</p>
+              <ul>
+                <li>Merit-based Scholarships</li>
+                <li>Need-based Financial Aid</li>
+                <li>Research Fellowship Programs</li>
+              </ul>
+              <p>Apply through the Student Portal → Financial Aid section</p>
+              <p class="notice-footer">For queries: scholarships@university.edu</p>
+            </div>
+          </article>
+
+          <!-- Notice 4 -->
+          <article class="notice-card notice-info" style="--rotation: 2.2deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge info">INFO</div>
+            <h3 class="notice-title">Library Renovation Complete</h3>
+            <p class="notice-date"><strong>May 10, 2026</strong></p>
+            <div class="notice-body">
+              <p>Our central library is now fully renovated with:</p>
+              <ul>
+                <li>Modern study spaces with high-speed WiFi</li>
+                <li>Advanced digital archive system</li>
+                <li>24/7 access during exam season</li>
+                <li>Quiet zones & collaborative areas</li>
+              </ul>
+              <p>Visit us at the newly designed entrance on Campus Avenue!</p>
+              <p class="notice-footer">Hours: 7 AM - 11 PM</p>
+            </div>
+          </article>
+
+          <!-- Notice 5 -->
+          <article class="notice-card notice-important" style="--rotation: -1.2deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge important">IMPORTANT</div>
+            <h3 class="notice-title">Course Registration Now Open</h3>
+            <p class="notice-date"><strong>May 5-15, 2026</strong></p>
+            <div class="notice-body">
+              <p>Online course registration for Summer 2026 semester is live!</p>
+              <p><strong>Key Dates:</strong></p>
+              <ul>
+                <li>Senior students: May 5-8</li>
+                <li>Junior students: May 9-11</li>
+                <li>Freshmen: May 12-15</li>
+              </ul>
+              <p>Register via: student.portal.university.edu</p>
+              <p class="notice-footer">Deadline: May 15, 11:59 PM</p>
+            </div>
+          </article>
+
+          <!-- Notice 6 -->
+          <article class="notice-card notice-announcement" style="--rotation: 1.8deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge announcement">ANNOUNCEMENT</div>
+            <h3 class="notice-title">Campus Placement Drive Week</h3>
+            <p class="notice-date"><strong>June 1-7, 2026</strong></p>
+            <div class="notice-body">
+              <p>Top IT, Finance, and Consulting companies recruiting on campus:</p>
+              <ul>
+                <li>20+ companies participating</li>
+                <li>200+ job openings</li>
+                <li>Average package: 8-12 LPA</li>
+              </ul>
+              <p>Pre-registration: placement.office@university.edu</p>
+              <p class="notice-footer">Eligible batch: 2024 & 2025 graduates</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Campus Noticeboard</p>
+    <!-- Modern Footer -->
+    <footer class="site-footer-modern">
+      <div class="footer-main">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </div>
+          <p class="brand-tagline">Excellence in Education</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <!-- Footer Links Sections -->
+        <div class="footer-links">
+          <!-- Section 1 -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="notices.html">Notices</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="footer-section">
+            <h4>Academic</h4>
+            <ul>
+              <li><a href="#">Course Catalog</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+              <li><a href="#">Degree Programs</a></li>
+              <li><a href="#">Faculty Directory</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Student Services</a></li>
+              <li><a href="#">Campus Map</a></li>
+              <li><a href="#">Library Portal</a></li>
+              <li><a href="#">IT Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 4 - Contact -->
+          <div class="footer-section footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">info@university.edu</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">University Campus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-modern">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 University Academic Portal. All rights reserved.</p>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Navigation Script -->
+    <script>
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const sidePanel = document.getElementById('sidePanel');
+      const panelBackdrop = document.getElementById('panelBackdrop');
+      const closePanelBtn = document.getElementById('closePanelBtn');
+
+      function toggleSidePanel() {
+        sidePanel.classList.toggle('active');
+        panelBackdrop.classList.toggle('active');
+        document.body.style.overflow = sidePanel.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburgerBtn.addEventListener('click', toggleSidePanel);
+      closePanelBtn.addEventListener('click', toggleSidePanel);
+      panelBackdrop.addEventListener('click', toggleSidePanel);
+
+      // Close side panel when a link is clicked
+      document.querySelectorAll('.side-panel-nav a').forEach(link => {
+        link.addEventListener('click', toggleSidePanel);
+      });
+    </script>
   </body>
 </html>

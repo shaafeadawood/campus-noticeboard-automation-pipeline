@@ -3,32 +3,442 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Noticeboard | Exams</title>
+    <title>University Academic Portal | Exams</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Campus Noticeboard</h1>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="notices.html">Notices</a></li>
-          <li><a href="exams.html" aria-current="page">Exams</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Modern Header with Navbar -->
+    <header class="site-header-modern">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </a>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar-menu" aria-label="Primary">
+          <ul class="nav-list-modern">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="notices.html" class="nav-link">Notices</a></li>
+            <li><a href="exams.html" aria-current="page" class="nav-link-active">Exams</a></li>
+            <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Side Panel -->
+      <div class="side-panel" id="sidePanel">
+        <button class="side-panel-close" id="closePanelBtn" aria-label="Close navigation">×</button>
+        <nav class="side-panel-nav">
+          <ul class="side-panel-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notices.html">Notices Board</a></li>
+            <li><a href="exams.html">Exam Portal</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="side-panel-info">
+          <h4>Quick Info</h4>
+          <p class="info-item"><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p class="info-item"><strong>Email:</strong> info@university.edu</p>
+          <p class="info-item"><strong>Hours:</strong> Mon-Fri 9AM-5PM</p>
+        </div>
+      </div>
+
+      <!-- Backdrop for Side Panel -->
+      <div class="side-panel-backdrop" id="panelBackdrop"></div>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>Exam Information</h2>
-        <p>Find exam schedules, hall allocations, and policy updates here.</p>
+    <main>
+      <!-- Page Hero Section -->
+      <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1>Examination Schedule</h1>
+          <p class="page-hero-subtitle">Summer 2026 Semester | Final Examinations</p>
+        </div>
       </section>
+
+      <!-- Quick Stats -->
+      <div class="content">
+        <section class="exam-stats">
+          <div class="stat-card">
+            <div class="stat-number">45</div>
+            <div class="stat-label">Courses</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">23</div>
+            <div class="stat-label">Exam Days</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">8</div>
+            <div class="stat-label">Exam Centers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2500+</div>
+            <div class="stat-label">Students</div>
+          </div>
+        </section>
+
+        <!-- Exam Datesheet -->
+        <section class="datesheet-section">
+          <h2>Exam Datesheet - June 2026</h2>
+          <p class="section-subtitle">Complete schedule for all undergraduate programs</p>
+          
+          <div class="datesheet-wrapper">
+            <table class="exam-datesheet">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Day</th>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Time</th>
+                  <th>Duration</th>
+                  <th>Hall</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="exam-row-1">
+                  <td>June 1</td>
+                  <td>Monday</td>
+                  <td>CS101</td>
+                  <td>Programming Fundamentals</td>
+                  <td>10:00 AM</td>
+                  <td>3 Hrs</td>
+                  <td>A-101</td>
+                </tr>
+                <tr class="exam-row-2">
+                  <td>June 1</td>
+                  <td>Monday</td>
+                  <td>MATH201</td>
+                  <td>Discrete Mathematics</td>
+                  <td>2:00 PM</td>
+                  <td>3 Hrs</td>
+                  <td>B-205</td>
+                </tr>
+                <tr class="exam-row-1">
+                  <td>June 2</td>
+                  <td>Tuesday</td>
+                  <td>PHYS102</td>
+                  <td>Physics II: Electromagnetism</td>
+                  <td>10:00 AM</td>
+                  <td>3 Hrs</td>
+                  <td>C-312</td>
+                </tr>
+                <tr class="exam-row-2">
+                  <td>June 2</td>
+                  <td>Tuesday</td>
+                  <td>CHEM105</td>
+                  <td>Organic Chemistry</td>
+                  <td>2:00 PM</td>
+                  <td>3 Hrs</td>
+                  <td>A-201</td>
+                </tr>
+                <tr class="exam-row-1">
+                  <td>June 3</td>
+                  <td>Wednesday</td>
+                  <td>ENG110</td>
+                  <td>Technical Communication</td>
+                  <td>10:00 AM</td>
+                  <td>2.5 Hrs</td>
+                  <td>D-104</td>
+                </tr>
+                <tr class="exam-row-2">
+                  <td>June 3</td>
+                  <td>Wednesday</td>
+                  <td>CS205</td>
+                  <td>Data Structures</td>
+                  <td>2:00 PM</td>
+                  <td>3 Hrs</td>
+                  <td>B-301</td>
+                </tr>
+                <tr class="exam-row-1">
+                  <td>June 4</td>
+                  <td>Thursday</td>
+                  <td>STAT150</td>
+                  <td>Probability & Statistics</td>
+                  <td>10:00 AM</td>
+                  <td>3 Hrs</td>
+                  <td>C-205</td>
+                </tr>
+                <tr class="exam-row-2">
+                  <td>June 4</td>
+                  <td>Thursday</td>
+                  <td>BIO108</td>
+                  <td>Molecular Biology</td>
+                  <td>2:00 PM</td>
+                  <td>3 Hrs</td>
+                  <td>E-150</td>
+                </tr>
+                <tr class="exam-row-1">
+                  <td>June 5</td>
+                  <td>Friday</td>
+                  <td>ECON120</td>
+                  <td>Microeconomics</td>
+                  <td>10:00 AM</td>
+                  <td>3 Hrs</td>
+                  <td>A-305</td>
+                </tr>
+                <tr class="exam-row-2">
+                  <td>June 5</td>
+                  <td>Friday</td>
+                  <td>HIST115</td>
+                  <td>Modern World History</td>
+                  <td>2:00 PM</td>
+                  <td>3 Hrs</td>
+                  <td>B-401</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Important Guidelines -->
+        <section class="exam-guidelines">
+          <h2>Important Guidelines</h2>
+          <div class="guidelines-grid">
+            <div class="guideline-card">
+              <div class="guideline-icon icon-arrival"></div>
+              <h3>Arrival Time</h3>
+              <p>Arrive at exam center 30 minutes before the scheduled time. Entry is strictly prohibited after 15 minutes of exam start time.</p>
+            </div>
+
+            <div class="guideline-card">
+              <div class="guideline-icon icon-documents"></div>
+              <h3>Required Documents</h3>
+              <p>Bring valid student ID, admit card, and writing materials. No electronic devices allowed except approved calculators.</p>
+            </div>
+
+            <div class="guideline-card">
+              <div class="guideline-icon icon-conduct"></div>
+              <h3>Code of Conduct</h3>
+              <p>Maintain academic integrity. Any form of malpractice will result in immediate disqualification and disciplinary action.</p>
+            </div>
+
+            <div class="guideline-card">
+              <div class="guideline-icon icon-seating"></div>
+              <h3>Seating Arrangement</h3>
+              <p>Seats are assigned randomly. Check the exam center layout posted online 24 hours before your exam date.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Exam Centers -->
+        <section class="exam-centers">
+          <h2>Exam Centers</h2>
+          <div class="centers-grid">
+            <div class="center-card">
+              <div class="center-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+              <h3>Main Campus - Building A</h3>
+              <p class="capacity">Capacity: 350 students</p>
+              <p>Location: Main gate area, near administrative block</p>
+            </div>
+
+            <div class="center-card">
+              <div class="center-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+              <h3>North Wing - Building B</h3>
+              <p class="capacity">Capacity: 280 students</p>
+              <p>Location: Near science block, north parking</p>
+            </div>
+
+            <div class="center-card">
+              <div class="center-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+              <h3>South Campus - Building C</h3>
+              <p class="capacity">Capacity: 320 students</p>
+              <p>Location: Engineering department area</p>
+            </div>
+
+            <div class="center-card">
+              <div class="center-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+              <h3>Library Annex - Building D</h3>
+              <p class="capacity">Capacity: 200 students</p>
+              <p>Location: Library complex, adjacent to digital lab</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Result Schedule -->
+        <section class="result-schedule">
+          <h2>Results & Important Dates</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Exam Period</h3>
+                <p>June 1 - June 23, 2026</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Exam Review Period</h3>
+                <p>June 24 - June 30, 2026</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Result Declaration</h3>
+                <p>July 15, 2026</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Grade Appeal Deadline</h3>
+                <p>July 25, 2026</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Download Resources -->
+        <section class="exam-resources">
+          <h2>Download Resources</h2>
+          <div class="resources-grid">
+            <a href="#" class="resource-btn">
+              <span class="btn-icon">PDF</span>
+              <span class="btn-text">Complete Datesheet</span>
+            </a>
+            <a href="#" class="resource-btn">
+              <span class="btn-icon">PDF</span>
+              <span class="btn-text">Exam Guidelines</span>
+            </a>
+            <a href="#" class="resource-btn">
+              <span class="btn-icon">PDF</span>
+              <span class="btn-text">Admit Card Format</span>
+            </a>
+            <a href="#" class="resource-btn">
+              <span class="btn-icon">PDF</span>
+              <span class="btn-text">Exam Center Map</span>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Campus Noticeboard</p>
+    <!-- Modern Footer -->
+    <footer class="site-footer-modern">
+      <div class="footer-main">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </div>
+          <p class="brand-tagline">Excellence in Education</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <!-- Footer Links Sections -->
+        <div class="footer-links">
+          <!-- Section 1 -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="notices.html">Notices</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="footer-section">
+            <h4>Academic</h4>
+            <ul>
+              <li><a href="#">Course Catalog</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+              <li><a href="#">Degree Programs</a></li>
+              <li><a href="#">Faculty Directory</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Student Services</a></li>
+              <li><a href="#">Campus Map</a></li>
+              <li><a href="#">Library Portal</a></li>
+              <li><a href="#">IT Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 4 - Contact -->
+          <div class="footer-section footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">info@university.edu</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">University Campus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-modern">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 University Academic Portal. All rights reserved.</p>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Navigation Script -->
+    <script>
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const sidePanel = document.getElementById('sidePanel');
+      const panelBackdrop = document.getElementById('panelBackdrop');
+      const closePanelBtn = document.getElementById('closePanelBtn');
+
+      function toggleSidePanel() {
+        sidePanel.classList.toggle('active');
+        panelBackdrop.classList.toggle('active');
+        document.body.style.overflow = sidePanel.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburgerBtn.addEventListener('click', toggleSidePanel);
+      closePanelBtn.addEventListener('click', toggleSidePanel);
+      panelBackdrop.addEventListener('click', toggleSidePanel);
+
+      // Close side panel when a link is clicked
+      document.querySelectorAll('.side-panel-nav a').forEach(link => {
+        link.addEventListener('click', toggleSidePanel);
+      });
+    </script>
   </body>
 </html>
