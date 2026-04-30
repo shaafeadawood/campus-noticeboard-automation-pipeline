@@ -1,1 +1,26 @@
-# Placeholder for future CI workflow configuration
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - develop
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify static site files
+        run: |
+          test -f src/index.html
+          test -f src/notices.html
+          test -f src/exams.html
+          test -f src/admissions.html
+          test -f src/contact.html
+          test -f styles/style.css
