@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Noticeboard | Home</title>
+    <title>University Academic Portal | Home</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <h1>Campus Noticeboard</h1>
+      <h1>🎓 University Portal</h1>
       <nav aria-label="Primary">
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
@@ -20,15 +20,129 @@
       </nav>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>Welcome</h2>
-        <p>Official campus announcements and student updates in one place.</p>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Your Academic Journey Starts Here</h1>
+          <p class="tagline">Centralized portal for all academic announcements, exams, and admissions information</p>
+        </div>
       </section>
+
+      <!-- Quick Access Cards -->
+      <div class="content">
+        <section class="quick-access">
+          <h2>Quick Access</h2>
+          <div class="cards-grid">
+            <article class="card">
+              <span class="card-icon">📢</span>
+              <h3>Notices</h3>
+              <p>Stay updated with the latest campus announcements and important notices from the administration.</p>
+              <a href="notices.html">View Notices</a>
+            </article>
+
+            <article class="card">
+              <span class="card-icon">📝</span>
+              <h3>Exams</h3>
+              <p>Access exam schedules, syllabi, results, and all examination-related information in one place.</p>
+              <a href="exams.html">View Exams</a>
+            </article>
+
+            <article class="card">
+              <span class="card-icon">🎯</span>
+              <h3>Admissions</h3>
+              <p>Learn about our admission process, requirements, and application procedures for new students.</p>
+              <a href="admissions.html">Apply Now</a>
+            </article>
+
+            <article class="card">
+              <span class="card-icon">📞</span>
+              <h3>Contact</h3>
+              <p>Get in touch with our academic advisors and administrative staff for any queries.</p>
+              <a href="contact.html">Contact Us</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Featured Updates Section -->
+        <section class="featured">
+          <h2>Latest Updates</h2>
+          <div class="updates-grid">
+            <article class="update-item">
+              <span class="update-date">📅 Today</span>
+              <h3>Spring Semester Registration Open</h3>
+              <p>Students can now register for Spring semester courses. Registration closes on December 20th. Visit the registration portal to enroll in your courses.</p>
+            </article>
+
+            <article class="update-item">
+              <span class="update-date">📅 Yesterday</span>
+              <h3>Final Exam Schedule Released</h3>
+              <p>The final examination schedule for all undergraduate and postgraduate programs has been released. Check the Exams section for complete details and venue information.</p>
+            </article>
+
+            <article class="update-item">
+              <span class="update-date">📅 Dec 18</span>
+              <h3>Library Extended Hours</h3>
+              <p>The central library will have extended hours during the examination period. Access 24/7 from December 25th to January 15th for all registered students.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <h2>Need Help?</h2>
+          <p>Have questions about admissions, courses, or campus services? Our academic advisors are here to help you succeed.</p>
+          <a href="contact.html" class="cta-btn">Get Support</a>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Campus Noticeboard</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="exams.html">Exams</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Academic</h3>
+          <ul>
+            <li><a href="#">Course Catalog</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">Degree Programs</a></li>
+            <li><a href="#">Faculty Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Student Resources</h3>
+          <ul>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Career Services</a></li>
+            <li><a href="#">Student Support</a></li>
+            <li><a href="#">Campus Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>📍 Campus Address</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>✉️ info@university.edu</li>
+            <li>🕐 Mon-Fri: 9AM-5PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 University Academic Portal. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
     </footer>
   </body>
 </html>
