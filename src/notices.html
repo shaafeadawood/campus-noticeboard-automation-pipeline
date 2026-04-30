@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Noticeboard | Notices</title>
+    <title>University Academic Portal | Notices</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <h1>Campus Noticeboard</h1>
+      <h1>University Portal</h1>
       <nav aria-label="Primary">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -20,15 +20,184 @@
       </nav>
     </header>
 
-    <main class="content">
-      <section>
-        <h2>Latest Notices</h2>
-        <p>This page lists the latest campus notices and updates.</p>
+    <main>
+      <!-- Notice Board Header -->
+      <section class="notice-board-header">
+        <div class="header-content">
+          <h1>Campus Notice Board</h1>
+          <p class="subtitle">Important announcements, events, and academic updates</p>
+        </div>
       </section>
+
+      <!-- Cork Notice Board -->
+      <div class="notice-board-container">
+        <div class="notice-board">
+          <!-- Notice 1 -->
+          <article class="notice-card notice-urgent" style="--rotation: -2deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge urgent">URGENT</div>
+            <h3 class="notice-title">Semester Exams Rescheduled</h3>
+            <p class="notice-date"><strong>May 15, 2026</strong></p>
+            <div class="notice-body">
+              <p>The final semester examinations have been rescheduled due to the upcoming cultural festival. New dates have been announced:</p>
+              <ul>
+                <li><strong>Theory Papers:</strong> June 1-10</li>
+                <li><strong>Practical Exams:</strong> June 12-15</li>
+                <li><strong>Result Declaration:</strong> July 5</li>
+              </ul>
+              <p class="notice-footer">Updated by: Academic Affairs Office</p>
+            </div>
+          </article>
+
+          <!-- Notice 2 -->
+          <article class="notice-card notice-event" style="--rotation: 1.5deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge event">EVENT</div>
+            <h3 class="notice-title">Annual Tech Fest 2026</h3>
+            <p class="notice-date"><strong>May 20-22, 2026</strong></p>
+            <div class="notice-body">
+              <p>Join us for the biggest tech festival of the year!</p>
+              <p><strong>Highlights:</strong></p>
+              <ul>
+                <li>Coding competitions with exciting prizes</li>
+                <li>Guest lectures from industry experts</li>
+                <li>Startup pitch competition</li>
+                <li>Gaming tournament & tech exhibitions</li>
+              </ul>
+              <p><strong>Registration:</strong> Open until May 18</p>
+              <p class="notice-footer">Contact: student.events@university.edu</p>
+            </div>
+          </article>
+
+          <!-- Notice 3 -->
+          <article class="notice-card notice-deadline" style="--rotation: -1.8deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge deadline">DEADLINE</div>
+            <h3 class="notice-title">Scholarship Applications Closing</h3>
+            <p class="notice-date"><strong>May 31, 2026</strong></p>
+            <div class="notice-body">
+              <p>Deadline for submitting scholarship applications:</p>
+              <ul>
+                <li>Merit-based Scholarships</li>
+                <li>Need-based Financial Aid</li>
+                <li>Research Fellowship Programs</li>
+              </ul>
+              <p>Apply through the Student Portal → Financial Aid section</p>
+              <p class="notice-footer">For queries: scholarships@university.edu</p>
+            </div>
+          </article>
+
+          <!-- Notice 4 -->
+          <article class="notice-card notice-info" style="--rotation: 2.2deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge info">INFO</div>
+            <h3 class="notice-title">Library Renovation Complete</h3>
+            <p class="notice-date"><strong>May 10, 2026</strong></p>
+            <div class="notice-body">
+              <p>Our central library is now fully renovated with:</p>
+              <ul>
+                <li>Modern study spaces with high-speed WiFi</li>
+                <li>Advanced digital archive system</li>
+                <li>24/7 access during exam season</li>
+                <li>Quiet zones & collaborative areas</li>
+              </ul>
+              <p>Visit us at the newly designed entrance on Campus Avenue!</p>
+              <p class="notice-footer">Hours: 7 AM - 11 PM</p>
+            </div>
+          </article>
+
+          <!-- Notice 5 -->
+          <article class="notice-card notice-important" style="--rotation: -1.2deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge important">IMPORTANT</div>
+            <h3 class="notice-title">Course Registration Now Open</h3>
+            <p class="notice-date"><strong>May 5-15, 2026</strong></p>
+            <div class="notice-body">
+              <p>Online course registration for Summer 2026 semester is live!</p>
+              <p><strong>Key Dates:</strong></p>
+              <ul>
+                <li>Senior students: May 5-8</li>
+                <li>Junior students: May 9-11</li>
+                <li>Freshmen: May 12-15</li>
+              </ul>
+              <p>Register via: student.portal.university.edu</p>
+              <p class="notice-footer">Deadline: May 15, 11:59 PM</p>
+            </div>
+          </article>
+
+          <!-- Notice 6 -->
+          <article class="notice-card notice-announcement" style="--rotation: 1.8deg;">
+            <div class="notice-pin pin-left"></div>
+            <div class="notice-pin pin-right"></div>
+            <div class="notice-badge announcement">ANNOUNCEMENT</div>
+            <h3 class="notice-title">Campus Placement Drive Week</h3>
+            <p class="notice-date"><strong>June 1-7, 2026</strong></p>
+            <div class="notice-body">
+              <p>Top IT, Finance, and Consulting companies recruiting on campus:</p>
+              <ul>
+                <li>20+ companies participating</li>
+                <li>200+ job openings</li>
+                <li>Average package: 8-12 LPA</li>
+              </ul>
+              <p>Pre-registration: placement.office@university.edu</p>
+              <p class="notice-footer">Eligible batch: 2024 & 2025 graduates</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Campus Noticeboard</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="exams.html">Exams</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Academic</h3>
+          <ul>
+            <li><a href="#">Course Catalog</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">Degree Programs</a></li>
+            <li><a href="#">Faculty Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Student Resources</h3>
+          <ul>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Career Services</a></li>
+            <li><a href="#">Student Support</a></li>
+            <li><a href="#">Campus Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>📍 Campus Address</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>✉️ info@university.edu</li>
+            <li>🕐 Mon-Fri: 9AM-5PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 University Academic Portal. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
     </footer>
   </body>
 </html>
