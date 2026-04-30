@@ -13,19 +13,20 @@ A modern, containerized university digital notice board platform built with a pr
 
 ## Tech Stack
 
-| Component | Version | Purpose |
-|-----------|---------|---------|
-| **Runtime** | Node.js 20 | Build and test environment |
-| **Build Tool** | Parcel 2.15.4 | Bundle and minify assets |
-| **HTML Validator** | HTMLHint 1.8.0 | Semantic HTML linting |
-| **CSS Validator** | Stylelint 16.22.0 | CSS code quality |
-| **Container** | Docker + Nginx Alpine | Production deployment |
-| **CI/CD** | GitHub Actions | Automated pipelines |
-| **Version Control** | Git + GitFlow | Repository management |
+| Component           | Version               | Purpose                    |
+| ------------------- | --------------------- | -------------------------- |
+| **Runtime**         | Node.js 20            | Build and test environment |
+| **Build Tool**      | Parcel 2.15.4         | Bundle and minify assets   |
+| **HTML Validator**  | HTMLHint 1.8.0        | Semantic HTML linting      |
+| **CSS Validator**   | Stylelint 16.22.0     | CSS code quality           |
+| **Container**       | Docker + Nginx Alpine | Production deployment      |
+| **CI/CD**           | GitHub Actions        | Automated pipelines        |
+| **Version Control** | Git + GitFlow         | Repository management      |
 
 ## Features
 
 ### Design & User Experience
+
 - **Responsive Layout** — Mobile-first design with breakpoints at 768px (tablet) and 480px (mobile)
 - **Modern Color Palette** — Professional blues, purples, and neutrals with CSS variables
 - **Smooth Animations** — Fade-in, slide-down, and pulse effects with 250ms transitions
@@ -34,12 +35,14 @@ A modern, containerized university digital notice board platform built with a pr
 - **Card-Based Layout** — Flexbox containers with hover elevation effects
 
 ### Development Tools
+
 - **Strict Validation** — HTML semantic checks + CSS modern notation enforcement
 - **Hot Reload** — Development server with auto-refresh (`npm run dev`)
 - **Minification** — Automatic asset optimization for production
 - **Caching** — npm cache in CI for 30% faster builds
 
 ### DevOps Infrastructure
+
 - **Multi-Stage Pipeline** — Lint → Build → Docker with dependency ordering
 - **Branch Protection** — Develop-only CI triggers, no direct commits to main/develop
 - **Containerization** — Lightweight nginx:alpine image (~20MB) with proper port exposure
@@ -108,11 +111,13 @@ npm run build        # Creates dist/ directory with minified assets
 ## Docker Deployment
 
 ### Build Image
+
 ```bash
 docker build -t campus-noticeboard:latest .
 ```
 
 ### Run Container
+
 ```bash
 # Development/testing
 docker run -d -p 8080:80 --name noticeboard campus-noticeboard:latest
@@ -126,6 +131,7 @@ docker run -d \
 ```
 
 ### Access Container
+
 - Local: http://localhost:8080
 - Pages available:
   - `/index.html` - Home
@@ -135,6 +141,7 @@ docker run -d \
   - `/contact.html` - Contact
 
 ### Cleanup
+
 ```bash
 docker stop noticeboard
 docker rm noticeboard
@@ -146,10 +153,10 @@ This project implements a strict GitFlow branching model:
 
 ### Branch Structure
 
-| Branch | Purpose | Protection |
-|--------|---------|-----------|
-| `main` | Production releases | Protected, no direct commits |
-| `develop` | Integration/staging | Protected, PR-only merges |
+| Branch      | Purpose             | Protection                      |
+| ----------- | ------------------- | ------------------------------- |
+| `main`      | Production releases | Protected, no direct commits    |
+| `develop`   | Integration/staging | Protected, PR-only merges       |
 | `feature/*` | Feature development | Regular branches, PR to develop |
 
 ### Development Workflow
@@ -195,11 +202,12 @@ Runs on all push and pull request events targeting the `develop` branch.
 # HTML validation
 htmlhint "src/**/*.html"
 
-# CSS validation  
+# CSS validation
 stylelint "styles/**/*.css"
 ```
 
 Validation rules:
+
 - Semantic HTML structure requirements enforced
 - CSS formatting and modern notation checked
 - Fails pipeline if violations detected
@@ -214,6 +222,7 @@ parcel build src/*.html --dist-dir dist
 ```
 
 Output:
+
 - Optimized `dist/` directory created
 - CSS minified to 6.47 kB production size
 - HTML pages compiled and bundled
@@ -228,17 +237,20 @@ docker build -t campus-noticeboard-automation-pipeline:ci .
 ```
 
 Result:
+
 - Lightweight nginx:alpine image created
 - Ready for staging and production deployment
 
 ### Pipeline Configuration
 
 **Triggers:**
+
 - Push events to `develop` branch
 - Pull requests targeting `develop` branch
 - No automatic triggers on `main` branch (prevents accidental deployments)
 
 **Viewing Pipeline Status:**
+
 1. Navigate to Actions tab on GitHub repository
 2. Select CI workflow from the list
 3. Click latest run to view detailed job logs
@@ -248,6 +260,7 @@ Result:
 ### HTML Validation (.htmlhintrc)
 
 Semantic HTML requirements:
+
 - Lowercase tag and attribute names enforced
 - Proper tag pairing and nesting validation
 - DOCTYPE declaration must appear first
@@ -259,6 +272,7 @@ Semantic HTML requirements:
 ### CSS Validation (.stylelintrc.json)
 
 Modern CSS standards applied:
+
 - Modern color notation (rgb with `/` syntax)
 - Short hex color code format required
 - No redundant longhand properties
@@ -278,6 +292,7 @@ npm run build        # Test full build pipeline
 ### Common Issues and Solutions
 
 **Inline Styles**
+
 ```bash
 # Incorrect approach
 <h2 style="color: blue;">Title</h2>
@@ -287,6 +302,7 @@ npm run build        # Test full build pipeline
 ```
 
 **Font Family Quotes**
+
 ```css
 /* Incorrect */
 font-family: Segoe UI;
@@ -296,6 +312,7 @@ font-family: "Segoe UI";
 ```
 
 **Color Notation**
+
 ```css
 /* Incorrect (deprecated) */
 rgba(0, 0, 0, 0.5)
@@ -321,13 +338,13 @@ rgb(0 0 0 / 50%)
 
 Common issues and their solutions:
 
-| Issue | Solution |
-|-------|----------|
-| `npm install` fails | Delete `node_modules/` and `package-lock.json`, then reinstall |
-| Linting errors appear | Run `npm run lint:html` and `npm run lint:css` for detailed output |
-| Build process fails | Check `.parcel-cache/` is in `.gitignore`, then delete cache: `rm -rf .parcel-cache/` |
-| Docker container won't start | Verify port 8080 is available: `lsof -i :8080` |
-| CSS changes not visible | Clear browser cache (Ctrl+Shift+R) or open in incognito mode |
+| Issue                        | Solution                                                                                 |
+| ---------------------------- | ---------------------------------------------------------------------------------------- |
+| `npm install` fails          | Delete `node_modules/` and `package-lock.json`, then reinstall                           |
+| Linting errors appear        | Run `npm run lint:html` and `npm run lint:css` for detailed output                       |
+| Build process fails          | Check `.parcel-cache/` is in `.gitignore`, then delete cache: `rm -rf .parcel-cache/`    |
+| Docker container won't start | Verify port 8080 is available: `lsof -i :8080`                                           |
+| CSS changes not visible      | Clear browser cache (Ctrl+Shift+R) or open in incognito mode                             |
 | Footer positioning incorrect | Verify `styles/style.css` has flexbox: `body { display: flex; flex-direction: column; }` |
 
 ## Configuration Files
