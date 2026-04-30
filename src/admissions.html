@@ -7,17 +7,57 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>University Portal</h1>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="notices.html">Notices</a></li>
-          <li><a href="exams.html">Exams</a></li>
-          <li><a href="admissions.html" aria-current="page">Admissions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Modern Header with Navbar -->
+    <header class="site-header-modern">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </a>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar-menu" aria-label="Primary">
+          <ul class="nav-list-modern">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="notices.html" class="nav-link">Notices</a></li>
+            <li><a href="exams.html" class="nav-link">Exams</a></li>
+            <li><a href="admissions.html" aria-current="page" class="nav-link-active">Admissions</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Side Panel -->
+      <div class="side-panel" id="sidePanel">
+        <button class="side-panel-close" id="closePanelBtn" aria-label="Close navigation">×</button>
+        <nav class="side-panel-nav">
+          <ul class="side-panel-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notices.html">Notices Board</a></li>
+            <li><a href="exams.html">Exam Portal</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="side-panel-info">
+          <h4>Quick Info</h4>
+          <p class="info-item"><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p class="info-item"><strong>Email:</strong> info@university.edu</p>
+          <p class="info-item"><strong>Hours:</strong> Mon-Fri 9AM-5PM</p>
+        </div>
+      </div>
+
+      <!-- Backdrop for Side Panel -->
+      <div class="side-panel-backdrop" id="panelBackdrop"></div>
     </header>
 
     <main>
@@ -386,5 +426,114 @@
         <p>&copy; 2026 University Academic Portal. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </footer>
+
+    <!-- Modern Footer -->
+    <footer class="site-footer-modern">
+      <div class="footer-main">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">University Portal</span>
+          </div>
+          <p class="brand-tagline">Excellence in Education</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <!-- Footer Links Sections -->
+        <div class="footer-links">
+          <!-- Section 1 -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="notices.html">Notices</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="footer-section">
+            <h4>Academic</h4>
+            <ul>
+              <li><a href="#">Course Catalog</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+              <li><a href="#">Degree Programs</a></li>
+              <li><a href="#">Faculty Directory</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Student Services</a></li>
+              <li><a href="#">Campus Map</a></li>
+              <li><a href="#">Library Portal</a></li>
+              <li><a href="#">IT Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Section 4 - Contact -->
+          <div class="footer-section footer-contact">
+            <h4>Get In Touch</h4>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">info@university.edu</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">University Campus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-modern">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2026 University Academic Portal. All rights reserved.</p>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Navigation Script -->
+    <script>
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const sidePanel = document.getElementById('sidePanel');
+      const panelBackdrop = document.getElementById('panelBackdrop');
+      const closePanelBtn = document.getElementById('closePanelBtn');
+
+      function toggleSidePanel() {
+        sidePanel.classList.toggle('active');
+        panelBackdrop.classList.toggle('active');
+        document.body.style.overflow = sidePanel.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburgerBtn.addEventListener('click', toggleSidePanel);
+      closePanelBtn.addEventListener('click', toggleSidePanel);
+      panelBackdrop.addEventListener('click', toggleSidePanel);
+
+      // Close side panel when a link is clicked
+      document.querySelectorAll('.side-panel-nav a').forEach(link => {
+        link.addEventListener('click', toggleSidePanel);
+      });
+    </script>
   </body>
 </html>
