@@ -1,0 +1,9 @@
+{
+  "name": "campus-noticeboard-automation-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website foundation for campus noticeboard automation pipeline.",
+  "scripts": {
+    "start": "npx serve src"
+  }
+}
