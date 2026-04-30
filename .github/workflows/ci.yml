@@ -9,18 +9,55 @@ on:
       - develop
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify static site files
-        run: |
-          test -f src/index.html
-          test -f src/notices.html
-          test -f src/exams.html
-          test -f src/admissions.html
-          test -f src/contact.html
-          test -f styles/style.css
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run HTMLHint
+        run: npm run lint:html
+
+      - name: Run Stylelint
+        run: npm run lint:css
+
+  build:
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build with Parcel
+        run: npm run build
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t campus-noticeboard-automation-pipeline:ci .
